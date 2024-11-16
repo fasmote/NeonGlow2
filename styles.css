@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./background-neon-light.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff0099;
+    text-shadow: 0 0 5px #ff0099, 0 0 10px #ff0099, 0 0 20px #ff0099;
+}
+
+header p {
+    font-style: italic;
+    color: #ff99cc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff0099, 0 0 30px #ff66cc;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+section#productos h2 {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00cccc, 0 0 30px #66ffff;
+    border: 2px solid #00ffff;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(42, 42, 42, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff0099;
+    flex: 1 1 calc(30% - 20px);
+    max-width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+form button {
+    background: #ff0099;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: rgba(26, 26, 26, 0.8);
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
